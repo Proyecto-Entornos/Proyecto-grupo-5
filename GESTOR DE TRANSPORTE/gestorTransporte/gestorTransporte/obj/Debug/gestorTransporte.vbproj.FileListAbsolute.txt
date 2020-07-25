@@ -1,0 +1,15 @@
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\bin\Debug\gestorTransporte.exe.config
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\bin\Debug\gestorTransporte.exe
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\bin\Debug\gestorTransporte.pdb
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\bin\Debug\gestorTransporte.xml
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.vbprojResolveAssemblyReference.cache
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.Resources.resources
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.vbproj.GenerateResource.Cache
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.exe
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.xml
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.pdb
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.Form1.resources
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.ventaBoletos.resources
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.estadosAutobuses.resources
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.eliminarBoleto.resources
+C:\Users\OscarM\Documents\GESTOR DE TRANSPORTE\gestorTransporte\gestorTransporte\obj\Debug\gestorTransporte.modificarOrdenesDeSalida.resources

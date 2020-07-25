@@ -1,0 +1,3312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="formatoBoleto.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="formatoBoleto.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="formatoBoleto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 678</value>
+  </data>
+  <data name="formatoBoleto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="formatoBoleto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>758, 307</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="formatoBoleto.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;formatoBoleto.Name" xml:space="preserve">
+    <value>formatoBoleto</value>
+  </data>
+  <data name="&gt;&gt;formatoBoleto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formatoBoleto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;formatoBoleto.ZOrder" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <metadata name="lblCodigo.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblCodigo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCodigo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblCodigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 694</value>
+  </data>
+  <data name="lblCodigo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblCodigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 19</value>
+  </data>
+  <data name="lblCodigo.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblCodigo.Text" xml:space="preserve">
+    <value>0000042</value>
+  </data>
+  <data name="&gt;&gt;lblCodigo.Name" xml:space="preserve">
+    <value>lblCodigo</value>
+  </data>
+  <data name="&gt;&gt;lblCodigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCodigo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCodigo.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <metadata name="lblPrecio.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblPrecio.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPrecio.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblPrecio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 944</value>
+  </data>
+  <data name="lblPrecio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblPrecio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 19</value>
+  </data>
+  <data name="lblPrecio.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lblPrecio.Text" xml:space="preserve">
+    <value>70 LPS</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.Name" xml:space="preserve">
+    <value>lblPrecio</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPrecio.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <metadata name="lblDestino.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblDestino.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDestino.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblDestino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 901</value>
+  </data>
+  <data name="lblDestino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblDestino.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="lblDestino.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblDestino.Text" xml:space="preserve">
+    <value>SIGUATEPEQUE</value>
+  </data>
+  <data name="&gt;&gt;lblDestino.Name" xml:space="preserve">
+    <value>lblDestino</value>
+  </data>
+  <data name="&gt;&gt;lblDestino.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblDestino.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDestino.ZOrder" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <metadata name="lblSalida.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblSalida.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSalida.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblSalida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>370, 862</value>
+  </data>
+  <data name="lblSalida.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblSalida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="lblSalida.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblSalida.Text" xml:space="preserve">
+    <value>LA ESPERANZA</value>
+  </data>
+  <data name="&gt;&gt;lblSalida.Name" xml:space="preserve">
+    <value>lblSalida</value>
+  </data>
+  <data name="&gt;&gt;lblSalida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSalida.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSalida.ZOrder" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <metadata name="lblNombre.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblNombre.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblNombre.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 819</value>
+  </data>
+  <data name="lblNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblNombre.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 19</value>
+  </data>
+  <data name="lblNombre.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblNombre.Text" xml:space="preserve">
+    <value>OSCAR JOSUE MEJIA</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.Name" xml:space="preserve">
+    <value>lblNombre</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNombre.ZOrder" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <metadata name="lblNoAsiento.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblNoAsiento.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNoAsiento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblNoAsiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>722, 777</value>
+  </data>
+  <data name="lblNoAsiento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblNoAsiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 19</value>
+  </data>
+  <data name="lblNoAsiento.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNoAsiento.Text" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lblNoAsiento.Name" xml:space="preserve">
+    <value>lblNoAsiento</value>
+  </data>
+  <data name="&gt;&gt;lblNoAsiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNoAsiento.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNoAsiento.ZOrder" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <metadata name="lblFecha.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="lblFecha.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFecha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 12pt</value>
+  </data>
+  <data name="lblFecha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 777</value>
+  </data>
+  <data name="lblFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="lblFecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 19</value>
+  </data>
+  <data name="lblFecha.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblFecha.Text" xml:space="preserve">
+    <value>13/07/2020</value>
+  </data>
+  <data name="&gt;&gt;lblFecha.Name" xml:space="preserve">
+    <value>lblFecha</value>
+  </data>
+  <data name="&gt;&gt;lblFecha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFecha.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFecha.ZOrder" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <metadata name="mapaAsientos.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="mapaAsientos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="mapaAsientos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mapaAsientos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1093, 259</value>
+  </data>
+  <data name="mapaAsientos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="mapaAsientos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 694</value>
+  </data>
+  <data name="mapaAsientos.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;mapaAsientos.Name" xml:space="preserve">
+    <value>mapaAsientos</value>
+  </data>
+  <data name="&gt;&gt;mapaAsientos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mapaAsientos.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mapaAsientos.ZOrder" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 26pt</value>
+  </data>
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 22</value>
+  </data>
+  <data name="Label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 52</value>
+  </data>
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>ESTACION DE BOLETERIA</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
+  </data>
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="asientoO1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1113, 332</value>
+  </data>
+  <data name="asientoO1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;asientoO1.Name" xml:space="preserve">
+    <value>asientoO1</value>
+  </data>
+  <data name="&gt;&gt;asientoO1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO1.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <metadata name="asientoO2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 332</value>
+  </data>
+  <data name="asientoO2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;asientoO2.Name" xml:space="preserve">
+    <value>asientoO2</value>
+  </data>
+  <data name="&gt;&gt;asientoO2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO2.ZOrder" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <metadata name="asientoO5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 387</value>
+  </data>
+  <data name="asientoO5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO5.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;asientoO5.Name" xml:space="preserve">
+    <value>asientoO5</value>
+  </data>
+  <data name="&gt;&gt;asientoO5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO5.ZOrder" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <metadata name="asientoO6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1179, 387</value>
+  </data>
+  <data name="asientoO6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO6.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;asientoO6.Name" xml:space="preserve">
+    <value>asientoO6</value>
+  </data>
+  <data name="&gt;&gt;asientoO6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO6.ZOrder" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <metadata name="asientoO9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 442</value>
+  </data>
+  <data name="asientoO9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO9.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;asientoO9.Name" xml:space="preserve">
+    <value>asientoO9</value>
+  </data>
+  <data name="&gt;&gt;asientoO9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO9.ZOrder" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <metadata name="asientoO10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1179, 442</value>
+  </data>
+  <data name="asientoO10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO10.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;asientoO10.Name" xml:space="preserve">
+    <value>asientoO10</value>
+  </data>
+  <data name="&gt;&gt;asientoO10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO10.ZOrder" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <metadata name="asientoO13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 500</value>
+  </data>
+  <data name="asientoO13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO13.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;asientoO13.Name" xml:space="preserve">
+    <value>asientoO13</value>
+  </data>
+  <data name="&gt;&gt;asientoO13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO13.ZOrder" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <metadata name="asientoO14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1178, 500</value>
+  </data>
+  <data name="asientoO14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO14.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;asientoO14.Name" xml:space="preserve">
+    <value>asientoO14</value>
+  </data>
+  <data name="&gt;&gt;asientoO14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO14.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO14.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <metadata name="asientoO17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 557</value>
+  </data>
+  <data name="asientoO17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO17.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;asientoO17.Name" xml:space="preserve">
+    <value>asientoO17</value>
+  </data>
+  <data name="&gt;&gt;asientoO17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO17.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO17.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <metadata name="asientoO18.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 557</value>
+  </data>
+  <data name="asientoO18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO18.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;asientoO18.Name" xml:space="preserve">
+    <value>asientoO18</value>
+  </data>
+  <data name="&gt;&gt;asientoO18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO18.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO18.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <metadata name="asientoO21.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 614</value>
+  </data>
+  <data name="asientoO21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO21.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;asientoO21.Name" xml:space="preserve">
+    <value>asientoO21</value>
+  </data>
+  <data name="&gt;&gt;asientoO21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO21.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO21.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <metadata name="asientoO22.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 614</value>
+  </data>
+  <data name="asientoO22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO22.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;asientoO22.Name" xml:space="preserve">
+    <value>asientoO22</value>
+  </data>
+  <data name="&gt;&gt;asientoO22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO22.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO22.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <metadata name="asientoO25.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 668</value>
+  </data>
+  <data name="asientoO25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO25.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;asientoO25.Name" xml:space="preserve">
+    <value>asientoO25</value>
+  </data>
+  <data name="&gt;&gt;asientoO25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO25.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO25.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <metadata name="asientoO26.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 668</value>
+  </data>
+  <data name="asientoO26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO26.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;asientoO26.Name" xml:space="preserve">
+    <value>asientoO26</value>
+  </data>
+  <data name="&gt;&gt;asientoO26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO26.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO26.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <metadata name="asientoO29.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 725</value>
+  </data>
+  <data name="asientoO29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO29.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;asientoO29.Name" xml:space="preserve">
+    <value>asientoO29</value>
+  </data>
+  <data name="&gt;&gt;asientoO29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO29.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO29.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <metadata name="asientoO30.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 725</value>
+  </data>
+  <data name="asientoO30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO30.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;asientoO30.Name" xml:space="preserve">
+    <value>asientoO30</value>
+  </data>
+  <data name="&gt;&gt;asientoO30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO30.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO30.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <metadata name="asientoO33.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 783</value>
+  </data>
+  <data name="asientoO33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO33.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;asientoO33.Name" xml:space="preserve">
+    <value>asientoO33</value>
+  </data>
+  <data name="&gt;&gt;asientoO33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO33.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO33.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <metadata name="asientoO34.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 783</value>
+  </data>
+  <data name="asientoO34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO34.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;asientoO34.Name" xml:space="preserve">
+    <value>asientoO34</value>
+  </data>
+  <data name="&gt;&gt;asientoO34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO34.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO34.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <metadata name="asientoO37.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1114, 839</value>
+  </data>
+  <data name="asientoO37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO37.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;asientoO37.Name" xml:space="preserve">
+    <value>asientoO37</value>
+  </data>
+  <data name="&gt;&gt;asientoO37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO37.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO37.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <metadata name="asientoO38.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1177, 839</value>
+  </data>
+  <data name="asientoO38.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO38.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;asientoO38.Name" xml:space="preserve">
+    <value>asientoO38</value>
+  </data>
+  <data name="&gt;&gt;asientoO38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO38.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO38.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <metadata name="asientoO3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1265, 333</value>
+  </data>
+  <data name="asientoO3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO3.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;asientoO3.Name" xml:space="preserve">
+    <value>asientoO3</value>
+  </data>
+  <data name="&gt;&gt;asientoO3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO3.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <metadata name="asientoO4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1330, 333</value>
+  </data>
+  <data name="asientoO4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO4.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;asientoO4.Name" xml:space="preserve">
+    <value>asientoO4</value>
+  </data>
+  <data name="&gt;&gt;asientoO4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO4.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <metadata name="asientoO7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1265, 387</value>
+  </data>
+  <data name="asientoO7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO7.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;asientoO7.Name" xml:space="preserve">
+    <value>asientoO7</value>
+  </data>
+  <data name="&gt;&gt;asientoO7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO7.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <metadata name="asientoO8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1331, 387</value>
+  </data>
+  <data name="asientoO8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO8.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;asientoO8.Name" xml:space="preserve">
+    <value>asientoO8</value>
+  </data>
+  <data name="&gt;&gt;asientoO8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO8.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <metadata name="asientoO11.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1265, 442</value>
+  </data>
+  <data name="asientoO11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO11.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;asientoO11.Name" xml:space="preserve">
+    <value>asientoO11</value>
+  </data>
+  <data name="&gt;&gt;asientoO11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO11.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO11.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <metadata name="asientoO12.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1331, 442</value>
+  </data>
+  <data name="asientoO12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO12.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;asientoO12.Name" xml:space="preserve">
+    <value>asientoO12</value>
+  </data>
+  <data name="&gt;&gt;asientoO12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO12.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO12.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <metadata name="asientoO15.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1266, 500</value>
+  </data>
+  <data name="asientoO15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO15.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;asientoO15.Name" xml:space="preserve">
+    <value>asientoO15</value>
+  </data>
+  <data name="&gt;&gt;asientoO15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO15.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO15.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <metadata name="asientoO16.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 500</value>
+  </data>
+  <data name="asientoO16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO16.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;asientoO16.Name" xml:space="preserve">
+    <value>asientoO16</value>
+  </data>
+  <data name="&gt;&gt;asientoO16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO16.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <metadata name="asientoO19.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1266, 557</value>
+  </data>
+  <data name="asientoO19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO19.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;asientoO19.Name" xml:space="preserve">
+    <value>asientoO19</value>
+  </data>
+  <data name="&gt;&gt;asientoO19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO19.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO19.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <metadata name="asientoO20.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 557</value>
+  </data>
+  <data name="asientoO20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO20.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;asientoO20.Name" xml:space="preserve">
+    <value>asientoO20</value>
+  </data>
+  <data name="&gt;&gt;asientoO20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO20.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO20.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <metadata name="asientoO23.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1266, 615</value>
+  </data>
+  <data name="asientoO23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO23.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;asientoO23.Name" xml:space="preserve">
+    <value>asientoO23</value>
+  </data>
+  <data name="&gt;&gt;asientoO23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO23.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO23.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <metadata name="asientoO24.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 615</value>
+  </data>
+  <data name="asientoO24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO24.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;asientoO24.Name" xml:space="preserve">
+    <value>asientoO24</value>
+  </data>
+  <data name="&gt;&gt;asientoO24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO24.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO24.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <metadata name="asientoO27.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1266, 669</value>
+  </data>
+  <data name="asientoO27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO27.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;asientoO27.Name" xml:space="preserve">
+    <value>asientoO27</value>
+  </data>
+  <data name="&gt;&gt;asientoO27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO27.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO27.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <metadata name="asientoO28.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 669</value>
+  </data>
+  <data name="asientoO28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO28.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;asientoO28.Name" xml:space="preserve">
+    <value>asientoO28</value>
+  </data>
+  <data name="&gt;&gt;asientoO28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO28.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO28.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <metadata name="asientoO31.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1265, 726</value>
+  </data>
+  <data name="asientoO31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO31.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;asientoO31.Name" xml:space="preserve">
+    <value>asientoO31</value>
+  </data>
+  <data name="&gt;&gt;asientoO31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO31.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO31.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <metadata name="asientoO32.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 726</value>
+  </data>
+  <data name="asientoO32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO32.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;asientoO32.Name" xml:space="preserve">
+    <value>asientoO32</value>
+  </data>
+  <data name="&gt;&gt;asientoO32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO32.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO32.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="asientoO35.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1265, 783</value>
+  </data>
+  <data name="asientoO35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO35.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;asientoO35.Name" xml:space="preserve">
+    <value>asientoO35</value>
+  </data>
+  <data name="&gt;&gt;asientoO35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO35.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO35.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <metadata name="asientoO36.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 784</value>
+  </data>
+  <data name="asientoO36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO36.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;asientoO36.Name" xml:space="preserve">
+    <value>asientoO36</value>
+  </data>
+  <data name="&gt;&gt;asientoO36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO36.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO36.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="asientoO39.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1265, 840</value>
+  </data>
+  <data name="asientoO39.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO39.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;asientoO39.Name" xml:space="preserve">
+    <value>asientoO39</value>
+  </data>
+  <data name="&gt;&gt;asientoO39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO39.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO39.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <metadata name="asientoO40.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1329, 840</value>
+  </data>
+  <data name="asientoO40.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO40.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;asientoO40.Name" xml:space="preserve">
+    <value>asientoO40</value>
+  </data>
+  <data name="&gt;&gt;asientoO40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO40.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO40.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="asientoO41.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1152, 899</value>
+  </data>
+  <data name="asientoO41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO41.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;asientoO41.Name" xml:space="preserve">
+    <value>asientoO41</value>
+  </data>
+  <data name="&gt;&gt;asientoO41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO41.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO41.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="asientoO42.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1216, 898</value>
+  </data>
+  <data name="asientoO42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO42.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;asientoO42.Name" xml:space="preserve">
+    <value>asientoO42</value>
+  </data>
+  <data name="&gt;&gt;asientoO42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO42.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO42.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="asientoO43.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="asientoO43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="asientoO43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1284, 898</value>
+  </data>
+  <data name="asientoO43.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="asientoO43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 43</value>
+  </data>
+  <data name="asientoO43.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;asientoO43.Name" xml:space="preserve">
+    <value>asientoO43</value>
+  </data>
+  <data name="&gt;&gt;asientoO43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;asientoO43.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;asientoO43.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="grpDetallesBus.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ayudanteTxt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ayudanteTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 157</value>
+  </data>
+  <data name="ayudanteTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="ayudanteTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 17</value>
+  </data>
+  <data name="ayudanteTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ayudanteTxt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;ayudanteTxt.Name" xml:space="preserve">
+    <value>ayudanteTxt</value>
+  </data>
+  <data name="&gt;&gt;ayudanteTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ayudanteTxt.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;ayudanteTxt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="conductorTxt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="conductorTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 120</value>
+  </data>
+  <data name="conductorTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="conductorTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 17</value>
+  </data>
+  <data name="conductorTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="conductorTxt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;conductorTxt.Name" xml:space="preserve">
+    <value>conductorTxt</value>
+  </data>
+  <data name="&gt;&gt;conductorTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;conductorTxt.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;conductorTxt.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="capacidadPasajerosTxt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="capacidadPasajerosTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 81</value>
+  </data>
+  <data name="capacidadPasajerosTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="capacidadPasajerosTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="capacidadPasajerosTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="capacidadPasajerosTxt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;capacidadPasajerosTxt.Name" xml:space="preserve">
+    <value>capacidadPasajerosTxt</value>
+  </data>
+  <data name="&gt;&gt;capacidadPasajerosTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;capacidadPasajerosTxt.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;capacidadPasajerosTxt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="marcaBusTxt.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="marcaBusTxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 44</value>
+  </data>
+  <data name="marcaBusTxt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="marcaBusTxt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="marcaBusTxt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="marcaBusTxt.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;marcaBusTxt.Name" xml:space="preserve">
+    <value>marcaBusTxt</value>
+  </data>
+  <data name="&gt;&gt;marcaBusTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;marcaBusTxt.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;marcaBusTxt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 158</value>
+  </data>
+  <data name="Label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="Label12.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Label12.Text" xml:space="preserve">
+    <value>AYUDANTE ASIGNADO</value>
+  </data>
+  <data name="&gt;&gt;Label12.Name" xml:space="preserve">
+    <value>Label12</value>
+  </data>
+  <data name="&gt;&gt;Label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label12.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;Label12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 121</value>
+  </data>
+  <data name="Label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 17</value>
+  </data>
+  <data name="Label11.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Label11.Text" xml:space="preserve">
+    <value>CONDUCTOR ASIGNADO</value>
+  </data>
+  <data name="&gt;&gt;Label11.Name" xml:space="preserve">
+    <value>Label11</value>
+  </data>
+  <data name="&gt;&gt;Label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label11.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;Label11.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 82</value>
+  </data>
+  <data name="Label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="Label10.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label10.Text" xml:space="preserve">
+    <value>CAPACIDAD</value>
+  </data>
+  <data name="&gt;&gt;Label10.Name" xml:space="preserve">
+    <value>Label10</value>
+  </data>
+  <data name="&gt;&gt;Label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label10.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;Label10.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 45</value>
+  </data>
+  <data name="Label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="Label9.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>MARCA</value>
+  </data>
+  <data name="&gt;&gt;Label9.Name" xml:space="preserve">
+    <value>Label9</value>
+  </data>
+  <data name="&gt;&gt;Label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label9.Parent" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;Label9.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grpDetallesBus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 8.25pt</value>
+  </data>
+  <data name="grpDetallesBus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1096, 22</value>
+  </data>
+  <data name="grpDetallesBus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="grpDetallesBus.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="grpDetallesBus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>304, 214</value>
+  </data>
+  <data name="grpDetallesBus.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="grpDetallesBus.Text" xml:space="preserve">
+    <value>DETALLES DEL AUTOBUS</value>
+  </data>
+  <data name="&gt;&gt;grpDetallesBus.Name" xml:space="preserve">
+    <value>grpDetallesBus</value>
+  </data>
+  <data name="&gt;&gt;grpDetallesBus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpDetallesBus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpDetallesBus.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkOtroDestino.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOtroDestino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 360</value>
+  </data>
+  <data name="chkOtroDestino.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 25</value>
+  </data>
+  <data name="chkOtroDestino.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="chkOtroDestino.Text" xml:space="preserve">
+    <value>Otro </value>
+  </data>
+  <data name="&gt;&gt;chkOtroDestino.Name" xml:space="preserve">
+    <value>chkOtroDestino</value>
+  </data>
+  <data name="&gt;&gt;chkOtroDestino.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOtroDestino.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;chkOtroDestino.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtMatriculaBus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 202</value>
+  </data>
+  <data name="txtMatriculaBus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtMatriculaBus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="txtMatriculaBus.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="txtMatriculaBus.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtMatriculaBus.Name" xml:space="preserve">
+    <value>txtMatriculaBus</value>
+  </data>
+  <data name="&gt;&gt;txtMatriculaBus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtMatriculaBus.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtMatriculaBus.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtOtroDestino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 352</value>
+  </data>
+  <data name="txtOtroDestino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtOtroDestino.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtOtroDestino.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 37</value>
+  </data>
+  <data name="txtOtroDestino.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="txtOtroDestino.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtOtroDestino.Name" xml:space="preserve">
+    <value>txtOtroDestino</value>
+  </data>
+  <data name="&gt;&gt;txtOtroDestino.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtOtroDestino.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtOtroDestino.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkClienteNormal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkClienteNormal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkClienteNormal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 52</value>
+  </data>
+  <data name="chkClienteNormal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 25</value>
+  </data>
+  <data name="chkClienteNormal.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="chkClienteNormal.Text" xml:space="preserve">
+    <value>CLIENTE NORMAL</value>
+  </data>
+  <data name="&gt;&gt;chkClienteNormal.Name" xml:space="preserve">
+    <value>chkClienteNormal</value>
+  </data>
+  <data name="&gt;&gt;chkClienteNormal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkClienteNormal.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;chkClienteNormal.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="chkMembresia.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkMembresia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 52</value>
+  </data>
+  <data name="chkMembresia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 25</value>
+  </data>
+  <data name="chkMembresia.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="chkMembresia.Text" xml:space="preserve">
+    <value>MEMBRESIA</value>
+  </data>
+  <data name="&gt;&gt;chkMembresia.Name" xml:space="preserve">
+    <value>chkMembresia</value>
+  </data>
+  <data name="&gt;&gt;chkMembresia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkMembresia.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;chkMembresia.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnNuevo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnNuevo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnNuevo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 344</value>
+  </data>
+  <data name="btnNuevo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="btnNuevo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 54</value>
+  </data>
+  <data name="btnNuevo.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="btnNuevo.Text" xml:space="preserve">
+    <value>NUEVO</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.Name" xml:space="preserve">
+    <value>btnNuevo</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;btnNuevo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnVenderBoleto.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnVenderBoleto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 18pt</value>
+  </data>
+  <data name="btnVenderBoleto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>521, 228</value>
+  </data>
+  <data name="btnVenderBoleto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="btnVenderBoleto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 89</value>
+  </data>
+  <data name="btnVenderBoleto.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="btnVenderBoleto.Text" xml:space="preserve">
+    <value>VENDER</value>
+  </data>
+  <data name="&gt;&gt;btnVenderBoleto.Name" xml:space="preserve">
+    <value>btnVenderBoleto</value>
+  </data>
+  <data name="&gt;&gt;btnVenderBoleto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVenderBoleto.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;btnVenderBoleto.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 18pt</value>
+  </data>
+  <data name="Label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 432</value>
+  </data>
+  <data name="Label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 35</value>
+  </data>
+  <data name="Label20.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="Label20.Text" xml:space="preserve">
+    <value>PRECIO </value>
+  </data>
+  <data name="&gt;&gt;Label20.Name" xml:space="preserve">
+    <value>Label20</value>
+  </data>
+  <data name="&gt;&gt;Label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label20.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label20.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtPrecioBoleto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 20pt</value>
+  </data>
+  <data name="txtPrecioBoleto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 429</value>
+  </data>
+  <data name="txtPrecioBoleto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtPrecioBoleto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 40</value>
+  </data>
+  <data name="txtPrecioBoleto.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="txtPrecioBoleto.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtPrecioBoleto.Name" xml:space="preserve">
+    <value>txtPrecioBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtPrecioBoleto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtPrecioBoleto.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtPrecioBoleto.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="cmbDestino.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmbDestino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 318</value>
+  </data>
+  <data name="cmbDestino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="cmbDestino.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 27</value>
+  </data>
+  <data name="cmbDestino.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cmbDestino.Name" xml:space="preserve">
+    <value>cmbDestino</value>
+  </data>
+  <data name="&gt;&gt;cmbDestino.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbDestino.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;cmbDestino.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 324</value>
+  </data>
+  <data name="Label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 21</value>
+  </data>
+  <data name="Label19.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Label19.Text" xml:space="preserve">
+    <value>DESTINO</value>
+  </data>
+  <data name="&gt;&gt;Label19.Name" xml:space="preserve">
+    <value>Label19</value>
+  </data>
+  <data name="&gt;&gt;Label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label19.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label19.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cmbSalida.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cmbSalida.Items" xml:space="preserve">
+    <value>LA ESPERANZA</value>
+  </data>
+  <data name="cmbSalida.Items1" xml:space="preserve">
+    <value>TEGUCIGALPA</value>
+  </data>
+  <data name="cmbSalida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 259</value>
+  </data>
+  <data name="cmbSalida.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="cmbSalida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 27</value>
+  </data>
+  <data name="cmbSalida.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;cmbSalida.Name" xml:space="preserve">
+    <value>cmbSalida</value>
+  </data>
+  <data name="&gt;&gt;cmbSalida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbSalida.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;cmbSalida.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 259</value>
+  </data>
+  <data name="Label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 21</value>
+  </data>
+  <data name="Label18.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="Label18.Text" xml:space="preserve">
+    <value>TERMINAL SALIDA</value>
+  </data>
+  <data name="&gt;&gt;Label18.Name" xml:space="preserve">
+    <value>Label18</value>
+  </data>
+  <data name="&gt;&gt;Label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label18.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label18.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="mskNoAsiento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 18pt</value>
+  </data>
+  <data name="mskNoAsiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>617, 135</value>
+  </data>
+  <data name="mskNoAsiento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="mskNoAsiento.Mask" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="mskNoAsiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 36</value>
+  </data>
+  <data name="mskNoAsiento.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="mskNoAsiento.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;mskNoAsiento.Name" xml:space="preserve">
+    <value>mskNoAsiento</value>
+  </data>
+  <data name="&gt;&gt;mskNoAsiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mskNoAsiento.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;mskNoAsiento.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="Label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>506, 148</value>
+  </data>
+  <data name="Label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 21</value>
+  </data>
+  <data name="Label17.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Label17.Text" xml:space="preserve">
+    <value>No. ASIENTO</value>
+  </data>
+  <data name="&gt;&gt;Label17.Name" xml:space="preserve">
+    <value>Label17</value>
+  </data>
+  <data name="&gt;&gt;Label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label17.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label17.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="Label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 202</value>
+  </data>
+  <data name="Label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
+  </data>
+  <data name="Label16.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Label16.Text" xml:space="preserve">
+    <value>CODIGO AUTOBUS</value>
+  </data>
+  <data name="&gt;&gt;Label16.Name" xml:space="preserve">
+    <value>Label16</value>
+  </data>
+  <data name="&gt;&gt;Label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label16.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label16.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="txtNombreCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 146</value>
+  </data>
+  <data name="txtNombreCliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtNombreCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="txtNombreCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="txtNombreCliente.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtNombreCliente.Name" xml:space="preserve">
+    <value>txtNombreCliente</value>
+  </data>
+  <data name="&gt;&gt;txtNombreCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtNombreCliente.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtNombreCliente.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="Label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 145</value>
+  </data>
+  <data name="Label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 21</value>
+  </data>
+  <data name="Label15.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="Label15.Text" xml:space="preserve">
+    <value>NOMBRE CLIENTE</value>
+  </data>
+  <data name="&gt;&gt;Label15.Name" xml:space="preserve">
+    <value>Label15</value>
+  </data>
+  <data name="&gt;&gt;Label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label15.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label15.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="txtIdentidadCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 98</value>
+  </data>
+  <data name="txtIdentidadCliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtIdentidadCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 20</value>
+  </data>
+  <data name="txtIdentidadCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="txtIdentidadCliente.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtIdentidadCliente.Name" xml:space="preserve">
+    <value>txtIdentidadCliente</value>
+  </data>
+  <data name="&gt;&gt;txtIdentidadCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtIdentidadCliente.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtIdentidadCliente.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 98</value>
+  </data>
+  <data name="Label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 21</value>
+  </data>
+  <data name="Label14.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Label14.Text" xml:space="preserve">
+    <value>IDENTIDAD CLIENTE</value>
+  </data>
+  <data name="&gt;&gt;Label14.Name" xml:space="preserve">
+    <value>Label14</value>
+  </data>
+  <data name="&gt;&gt;Label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label14.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label14.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtCodigoBoleto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>597, 45</value>
+  </data>
+  <data name="txtCodigoBoleto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="txtCodigoBoleto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="txtCodigoBoleto.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="txtCodigoBoleto.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoBoleto.Name" xml:space="preserve">
+    <value>txtCodigoBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoBoleto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoBoleto.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;txtCodigoBoleto.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="Label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 47</value>
+  </data>
+  <data name="Label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 1, 0</value>
+  </data>
+  <data name="Label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 21</value>
+  </data>
+  <data name="Label13.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Label13.Text" xml:space="preserve">
+    <value>CODIGO BOLETO</value>
+  </data>
+  <data name="&gt;&gt;Label13.Name" xml:space="preserve">
+    <value>Label13</value>
+  </data>
+  <data name="&gt;&gt;Label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label13.Parent" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;Label13.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="grpVentBoleto.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 10pt</value>
+  </data>
+  <data name="grpVentBoleto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 91</value>
+  </data>
+  <data name="grpVentBoleto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="grpVentBoleto.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="grpVentBoleto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 553</value>
+  </data>
+  <data name="grpVentBoleto.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="grpVentBoleto.Text" xml:space="preserve">
+    <value>VENTA DE BOLETOS</value>
+  </data>
+  <data name="&gt;&gt;grpVentBoleto.Name" xml:space="preserve">
+    <value>grpVentBoleto</value>
+  </data>
+  <data name="&gt;&gt;grpVentBoleto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpVentBoleto.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpVentBoleto.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="horaDespegue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="horaDespegue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 18pt</value>
+  </data>
+  <data name="horaDespegue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="horaDespegue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 191</value>
+  </data>
+  <data name="horaDespegue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 35</value>
+  </data>
+  <data name="horaDespegue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="horaDespegue.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="&gt;&gt;horaDespegue.Name" xml:space="preserve">
+    <value>horaDespegue</value>
+  </data>
+  <data name="&gt;&gt;horaDespegue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;horaDespegue.Parent" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;horaDespegue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 168</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>HORA DE SALIDA</value>
+  </data>
+  <data name="Label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblAsientosDisp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAsientosDisp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 18pt</value>
+  </data>
+  <data name="lblAsientosDisp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAsientosDisp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 121</value>
+  </data>
+  <data name="lblAsientosDisp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 35</value>
+  </data>
+  <data name="lblAsientosDisp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblAsientosDisp.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="&gt;&gt;lblAsientosDisp.Name" xml:space="preserve">
+    <value>lblAsientosDisp</value>
+  </data>
+  <data name="&gt;&gt;lblAsientosDisp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAsientosDisp.Parent" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;lblAsientosDisp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 104</value>
+  </data>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 17</value>
+  </data>
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>ASIENTOS DISPONIBLES</value>
+  </data>
+  <data name="Label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 35</value>
+  </data>
+  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 17</value>
+  </data>
+  <data name="Label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>TIEMPO RESTANTE DE ESPERA</value>
+  </data>
+  <data name="Label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tempSalida.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tempSalida.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 18pt</value>
+  </data>
+  <data name="tempSalida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 52</value>
+  </data>
+  <data name="tempSalida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 35</value>
+  </data>
+  <data name="tempSalida.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tempSalida.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="&gt;&gt;tempSalida.Name" xml:space="preserve">
+    <value>tempSalida</value>
+  </data>
+  <data name="&gt;&gt;tempSalida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tempSalida.Parent" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;tempSalida.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpTimer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 8.25pt</value>
+  </data>
+  <data name="grpTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 91</value>
+  </data>
+  <data name="grpTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 250</value>
+  </data>
+  <data name="grpTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="grpTimer.Text" xml:space="preserve">
+    <value>MISCELANEO</value>
+  </data>
+  <data name="&gt;&gt;grpTimer.Name" xml:space="preserve">
+    <value>grpTimer</value>
+  </data>
+  <data name="&gt;&gt;grpTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpTimer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpTimer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="picTiempoSalida.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="picTiempoSalida.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 489</value>
+  </data>
+  <data name="picTiempoSalida.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="picTiempoSalida.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 33</value>
+  </data>
+  <data name="picTiempoSalida.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;picTiempoSalida.Name" xml:space="preserve">
+    <value>picTiempoSalida</value>
+  </data>
+  <data name="&gt;&gt;picTiempoSalida.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picTiempoSalida.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;picTiempoSalida.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 497</value>
+  </data>
+  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="Label5.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>TIEMPO SALIDA</value>
+  </data>
+  <data name="Label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="picBusFull.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="picBusFull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 413</value>
+  </data>
+  <data name="picBusFull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="picBusFull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 33</value>
+  </data>
+  <data name="picBusFull.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;picBusFull.Name" xml:space="preserve">
+    <value>picBusFull</value>
+  </data>
+  <data name="&gt;&gt;picBusFull.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picBusFull.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;picBusFull.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 422</value>
+  </data>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>BUS LLENO</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSalidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 10pt</value>
+  </data>
+  <data name="btnSalidas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSalidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 294</value>
+  </data>
+  <data name="btnSalidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 67</value>
+  </data>
+  <data name="btnSalidas.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnSalidas.Text" xml:space="preserve">
+    <value>ESTADO DE SALIDAS</value>
+  </data>
+  <data name="&gt;&gt;btnSalidas.Name" xml:space="preserve">
+    <value>btnSalidas</value>
+  </data>
+  <data name="&gt;&gt;btnSalidas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSalidas.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnSalidas.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnModificarSalidas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 10pt</value>
+  </data>
+  <data name="btnModificarSalidas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnModificarSalidas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 207</value>
+  </data>
+  <data name="btnModificarSalidas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 67</value>
+  </data>
+  <data name="btnModificarSalidas.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnModificarSalidas.Text" xml:space="preserve">
+    <value>ORDEN DE SALIDA DE AUTOBUSES</value>
+  </data>
+  <data name="&gt;&gt;btnModificarSalidas.Name" xml:space="preserve">
+    <value>btnModificarSalidas</value>
+  </data>
+  <data name="&gt;&gt;btnModificarSalidas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnModificarSalidas.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;btnModificarSalidas.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="eliminarBoletos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 10pt</value>
+  </data>
+  <data name="eliminarBoletos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="eliminarBoletos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 116</value>
+  </data>
+  <data name="eliminarBoletos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 67</value>
+  </data>
+  <data name="eliminarBoletos.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="eliminarBoletos.Text" xml:space="preserve">
+    <value>MODIFICAR BOLETO</value>
+  </data>
+  <data name="&gt;&gt;eliminarBoletos.Name" xml:space="preserve">
+    <value>eliminarBoletos</value>
+  </data>
+  <data name="&gt;&gt;eliminarBoletos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eliminarBoletos.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;eliminarBoletos.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="nextDepart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 10pt</value>
+  </data>
+  <data name="nextDepart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 33</value>
+  </data>
+  <data name="nextDepart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 67</value>
+  </data>
+  <data name="nextDepart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="nextDepart.Text" xml:space="preserve">
+    <value>SIGUIENTE AUTOBUS</value>
+  </data>
+  <data name="&gt;&gt;nextDepart.Name" xml:space="preserve">
+    <value>nextDepart</value>
+  </data>
+  <data name="&gt;&gt;nextDepart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nextDepart.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;nextDepart.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GroupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Fugaz One, 8.25pt</value>
+  </data>
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 350</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 603</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>CONTROLES</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="timerRestante.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="systemHour.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 17</value>
+  </metadata>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>905, 977</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="timerPulsacion.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>261, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1426, 1022</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ventaBoletos</value>
+  </data>
+  <data name="&gt;&gt;timerRestante.Name" xml:space="preserve">
+    <value>timerRestante</value>
+  </data>
+  <data name="&gt;&gt;timerRestante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;systemHour.Name" xml:space="preserve">
+    <value>systemHour</value>
+  </data>
+  <data name="&gt;&gt;systemHour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerPulsacion.Name" xml:space="preserve">
+    <value>timerPulsacion</value>
+  </data>
+  <data name="&gt;&gt;timerPulsacion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ventaBoletos</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
