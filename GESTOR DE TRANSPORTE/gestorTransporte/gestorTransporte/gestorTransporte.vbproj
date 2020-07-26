@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autobuses.Designer.vb">
+      <DependentUpon>Autobuses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Autobuses.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="eliminarBoleto.Designer.vb">
       <DependentUpon>eliminarBoleto.vb</DependentUpon>
@@ -83,13 +89,6 @@
       <DependentUpon>estadosAutobuses.vb</DependentUpon>
     </Compile>
     <Compile Include="estadosAutobuses.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="modificarOrdenesDeSalida.Designer.vb">
@@ -122,14 +121,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Autobuses.resx">
+      <DependentUpon>Autobuses.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eliminarBoleto.resx">
       <DependentUpon>eliminarBoleto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="estadosAutobuses.resx">
       <DependentUpon>estadosAutobuses.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificarOrdenesDeSalida.resx">
       <DependentUpon>modificarOrdenesDeSalida.vb</DependentUpon>

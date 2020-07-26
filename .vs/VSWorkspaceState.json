@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Boleteria"
+    "\\Boleteria",
+    "\\Boleteria\\Boleteria",
+    "\\GESTOR DE TRANSPORTE",
+    "\\GESTOR DE TRANSPORTE\\gestorTransporte"
   ],
   "SelectedNode": "\\Boleteria\\Boleteria.sln",
   "PreviewInSolutionExplorer": false
