@@ -1,4 +1,4 @@
-drop database IF EXISTS terminalAutobuses;
+drop database terminalAutobuses;
 GO
 
 create database terminalAutobuses;
@@ -24,7 +24,7 @@ create table clientes(
 create table empleados(
 	id int identity,
 	codigo varchar(3) primary key not null,
-	identidad varchar(13) not null,
+	identidadEmpleado varchar(13) not null,
 	primerNombre varchar(25) not null,
 	segundoNombre varchar(25) not null,
 	primerApellido varchar(25) not null,
@@ -50,13 +50,14 @@ create table autobuses(
 	estado char(10) not null,
 	conductorAsignado varchar(3) not null,
 	ayudanteAsignado varchar(3) not null,
-	ubicacionActual varchar(100) not null,	
+	ubicacionActual varchar(25) not null,	
 
 	FOREIGN KEY(conductorAsignado) references empleados(codigo),
 	FOREIGN KEY(ayudanteAsignado) references empleados(codigo),
 
 );
 
+SELECT primerNombre FROM autobuses INNER JOIN empleados ON autobuses.matricula = '001' and autobuses.conductorAsignado = empleados.codigo
 
 create table tarifas(
 	id int identity primary key,
@@ -77,62 +78,59 @@ create table destinos(
 create table salidaDiaria(
 	id int primary key identity,
 	primeraHora time(7) not  null,
-	primeraSalida varchar(10) not null,
+	primeraSalida int not null,
 
 	segundoHora time(7) not  null,
-	segundaSalida varchar(10) not null,
+	segundaSalida int not null,
 
 	terceraHora time(7) not null,
-	terceraSalida varchar(10) not null,
+	terceraSalida int not null,
 
 	cuartaHora time(7) not null,
-	cuartaSalida varchar(10) not null,
+	cuartaSalida int not null,
 
 	quintaHora time(7) not null,
-	quintaSalida varchar(10) not null,
+	quintaSalida int not null,
 
 	sextaHora time(7) not null,
-	sextaSalida varchar(10) not null,
+	sextaSalida int not null,
 
 	septimaHora time(7) not null,
-	septimaSalida varchar(10) not null,
+	septimaSalida int not null,
 
 	octavaHora time(7) not null,
-	octavaSalida varchar(10) not null,
+	octavaSalida int not null,
 
 	novenaHora time(7) not null,
-	novenaSalida varchar(10) not null,
+	novenaSalida int not null,
 
 	decimaHora time(7) not null,
-	decimaSalida varchar(10) not null,
+	decimaSalida int not null,
 
 	onceHora time(7) not null,
-	onceSalida varchar(10) not null,
+	onceSalida int not null,
 
 	doceHora time(7) not null,
-	doceSalida varchar(10) not null,
+	doceSalida int not null,
 
 	treceHora time(7) not null,
-	treceSalida varchar(10) not null,
+	treceSalida int not null,
 
 	catorceHora time(7) not null,
-	catorceSalida varchar(10) not null,
+	catorceSalida int not null,
 );
 
 create table boleteria(
 	id int identity,
-	tipoBoleto int not null,
 	fecha date not null,
 	codigoBoleto varchar(25) primary key not null,
 	identidadCliente varchar(13) null,
 	matriculaAutobus varchar(25) not null,
 	numeroAsiento int not null,
 	terminalSalida varchar(25) not null,
-	destino int null,
-	otroPrecio int null, /**/
-	otroDestino varchar(25) null,
-	noSalida int not null
-
+	destino int not null,
+	precio int null /**/
+	
 	FOREIGN KEY(identidadCliente) references clientes(identidadCliente),
 	FOREIGN KEY(matriculaAutobus) references  autobuses(matricula),
 	FOREIGN KEY(destino) references destinos(id)
@@ -140,7 +138,6 @@ create table boleteria(
 	ON DELETE CASCADE
 	ON UPDATE CASCADE
 );
- 
  
 -- Agregar Cliente
 CREATE PROCEDURE agregarCliente (@identidadCliente varchar(25), @primerNombre varchar(25), @segundoNombre varchar(25), @primerApellido varchar(25), @segundoApellido varchar(25), @edadCliente int, @departamento varchar(25), @estado char(10))
@@ -153,14 +150,16 @@ AS BEGIN
 
 	insert into clientes values(@identidadCliente, @primerNombre, @segundoNombre, @primerApellido, @segundoApellido, @edadCliente, @departamento, @estado)
 
+	
 END
 
 
-
+execute agregarCliente  '1608200200031', 'David', 'Edgardo', 'Mejia', 'Urbina', 19, 'Santa Barbara', 'Activo'
 execute agregarCliente '1001200200094', 'OSCAR', 'JOSUE', 'MEJIA', 'SEREN', 19, 'INTIBUCA', 'ACTIVO'
 execute agregarCliente '0000000000000', 'GENERICO', 'GENERICO', 'GENERICO', 'GENERICO', 00, 'NULL', 'NULL'
 
-
+--SELECT MAX(id) FROM boleteria
+SELECT * FROM CLIENTES
 
 -- Actualizar Cliente
 CREATE PROCEDURE actualizarCliente (@identidadCliente varchar(25), @primerNombre varchar(25), @segundoNombre varchar(25), @primerApellido varchar(25), @segundoApellido varchar(25), @edadCliente int, @departamento varchar(25), @estado char(10))
@@ -175,6 +174,7 @@ AS BEGIN
 
 END
 
+Execute actualizarCliente '1001200200094', 'OSCAR', 'JOSUE', 'MEJIA', 'SEREN', 20, 'INTIBUCA', 'ACTIVO'
 
 -- Eliminar Cliente
 CREATE PROCEDURE eliminarCliente(@identidadCliente varchar(13))
@@ -182,14 +182,14 @@ AS BEGIN
 	
 	IF exists(select identidadCliente from clientes WHERE
 		(identidadCliente = @identidadCliente))
-		update clientes set estado = 'UNNABLED'
+		update clientes set estado = 'UNNABLED' where identidadCliente = @identidadCliente
 
 	else
 		raiserror('NO EXISTE NINGUN USUARIO CON ESTA IDENTIDAD!', 16,1)
 	
 END
 
---execute eliminarCliente '1001200200094'
+execute eliminarCliente '0000000000000'
 
 -- Buscar Un cliente
 CREATE PROCEDURE buscarCliente(@identidadCliente varchar(13))
@@ -204,12 +204,12 @@ AS BEGIN
 	
 END
 
---execute buscarCliente '1%'
+execute buscarCliente '1%'
 
 /* PARA EMPLEADOS */
 
 -- Insertar un empleado
-CREATE PROCEDURE agregarEmpleados(@codigo varchar(25), @identidad varchar(13), @primerNombre varchar(25), @segundoNombre varchar(25), @primerApellido varchar(25), @segundoApellido varchar(25), @edad int, @añosDeServicio int, @estado char(10), @cargo char(10))
+CREATE PROCEDURE agregarEmpleados(@codigo varchar(3), @identidadEmpleado varchar(13), @primerNombre varchar(25), @segundoNombre varchar(25), @primerApellido varchar(25), @segundoApellido varchar(25), @edad int, @añosDeServicio int, @estado char(10), @cargo char(10))
 AS BEGIN
 	
 	IF exists(select codigo from empleados WHERE
@@ -217,39 +217,46 @@ AS BEGIN
 		raiserror('USUARIO EN USO!', 16,1)
 	else
 
-	insert into empleados values(@codigo, @identidad, @primerNombre, @segundoNombre, @primerApellido, @segundoApellido, @edad, @añosDeServicio, @estado, @cargo)
+	insert into empleados values(@codigo, @identidadEmpleado, @primerNombre, @segundoNombre, @primerApellido, @segundoApellido, @edad, @añosDeServicio, @estado, @cargo)
 	
 END
 
-
+execute agregarEmpleados '001', '1608200200031', 'David', 'Edgardo', 'Mejia', 'Urbina', 20, 3, 'Activo', 'Conductor'
+execute agregarEmpleados '002', '1608198100321', 'Jose', 'Luis', 'Mejia', 'Hernandez', 21, 2, 'Activo', 'Ayudante'
 execute agregarEmpleados'100','1001200200094', 'OSCAR', 'JOSUE', 'MEJIA', 'SEREN', 19, 5, 'ACTIVO', 'CONDUCTOR'
 execute agregarEmpleados'200','1001200200095', 'ANGEL', 'EMMANUEL', 'MEJIA', 'DELCID', 20, 3, 'ACTIVO', 'AYUDANTE'
 
+Select * from empleados 
 
 -- Actualizar un Empleado
-CREATE PROCEDURE actualizarEmpleados(@codigo varchar(25), @identidad varchar(13), @primerNombre varchar(25), @segundoNombre varchar(25), @primerApellido varchar(25), @segundoApellido varchar(25), @edad int, @añosDeServicio int, @estado char(10), @cargo char(10))
+CREATE PROCEDURE actualizarEmpleados(@codigo varchar(3), @identidadEmpleado varchar(13), @primerNombre varchar(25), @segundoNombre varchar(25), @primerApellido varchar(25), @segundoApellido varchar(25), @edad int, @añosDeServicio int, @estado char(10), @cargo char(10))
 AS BEGIN
 	
 	IF exists(select codigo from empleados WHERE
 		(codigo = @codigo))
-		UPDATE empleados SET codigo = @codigo, identidad = @identidad, primerNombre = @primerNombre, segundoNombre = @segundoNombre, primerApellido = @primerApellido, segundoApellido = @segundoApellido, edad = @edad, añosDeServicio = @añosDeServicio, estado = @estado,  cargo = @cargo WHERE codigo = @codigo
+		UPDATE empleados SET codigo = @codigo, identidadEmpleado = @identidadEmpleado, primerNombre = @primerNombre, segundoNombre = @segundoNombre, primerApellido = @primerApellido, segundoApellido = @segundoApellido, edad = @edad, añosDeServicio = @añosDeServicio, estado = @estado,  cargo = @cargo WHERE codigo = @codigo
 	else
 		raiserror('NO EXISTE NINGUN USUARIO CON ESTA IDENTIDAD!', 16,1)
 END
 
+execute actualizarEmpleados '001', '1608200200031', 'David', 'Edgardo', 'Mejia', 'Urbina', 25, 3, 'Activo', 'Conductor'
+Select * from empleados 
+
 -- Eliminar un empleado
 
-CREATE PROCEDURE eliminarEmpleado(@codigo varchar(25))
+CREATE PROCEDURE eliminarEmpleado(@codigo varchar(3))
 AS BEGIN
 
 	IF exists(select codigo from empleados WHERE
 		(codigo = @codigo))
-		update empleados set estado = 'UNNABLED' WHERE empleados.codigo = @codigo
+		update empleados set estado = 'INACTIVO' WHERE empleados.codigo = @codigo
 
 	else
 		raiserror('NO EXISTE NINGUN USUARIO CON ESTE CODIGO', 16,1)
 	
 END
+
+execute eliminarEmpleado '100'
 
 
 /* PARA AUTOBUSES */
@@ -270,8 +277,6 @@ END
 
 execute agregarAutobus '001', 'IRIZAR', 'I6', 43, 3, 2015, 14000, 'BEIGE', 'SERVICIO', '100', '200', 'LA ESPERANZA'
 execute agregarAutobus '002', 'TOYOTA', 'COASTER', 43, 3, 2013, 12000, 'BLANCO', 'SERVICIO', '200', '100', 'LA ESPERANZA'
-execute agregarAutobus '003', 'COMIL', 'CAMPIONE', 43, 3, 2001, 18000, 'VERDE', 'SERVICIO', '100', '200', 'LA ESPERANZA'
-execute agregarAutobus '004', 'COMIL', 'PIA', 43, 5, 2003, 13000, 'GRIS', 'SERVICIO', '200', '100', 'LA ESPERANZA'
 
 -- Modificar un autobus
 CREATE PROCEDURE actualizarAutobus(@matricula varchar(25), @marca varchar(25), @modelo varchar(25) ,@NoAsientos int, @añosServicio int, @añoFabricacion int, @kilometraje int, @color varchar(25), @estado char(10), @conductorAsignado int, @ayudanteAsignado int, @ubicacionActual varchar(25))
@@ -279,23 +284,15 @@ AS BEGIN
 	
 	IF exists(select matricula from autobuses WHERE
 		(matricula = @matricula))
-		UPDATE autobuses set matricula = @matricula, marca = @marca, modelo =@modelo , NoAsientos = @NoAsientos, añosServicio =@añosServicio, añoFabricacion = @añoFabricacion, kilometraje= @kilometraje, color = @color, estado = @estado, conductorAsignado = @conductorAsignado, ayudanteAsignado = @ayudanteAsignado, ubicacionActual = @ubicacionActual WHERE matricula = @matricula
+		UPDATE autobuses set matricula = @matricula, marca = @marca, modelo =@modelo , NoAsientos = @NoAsientos, añosServicio =@añosServicio, añoFabricacion = @añoFabricacion, kilometraje= @kilometraje, color = @color, estado = @estado, conductorAsignado = @conductorAsignado, ayudanteAsignado = @ayudanteAsignado, ubicacionActual = @ubicacionActual
 	else
 
 		raiserror('NO EXISTE NINGUN AUTOBUS CON ESTA MATRICULA!', 16,1)
 
 END
 
-CREATE PROCEDURE actualizarUbicacionAutobus(@matricula varchar(25), @ubicacionActual varchar(100))
-AS BEGIN
-	
 
-		UPDATE autobuses set ubicacionActual = @ubicacionActual WHERE matricula = @matricula 
-
-END
-
-execute actualizarUbicacionAutobus '001', 'TEGUCIGALPA'
-
+-- Eliminar un autobus
 CREATE PROCEDURE eliminarAutobus(@matricula varchar(25))
 AS BEGIN
 	
@@ -308,37 +305,39 @@ AS BEGIN
 
 END
 
-
-
-
 /* CREAR UN NUEVO ORDEN DE BUSES PARA EL DIA*/
-CREATE PROCEDURE insertarOrdenSalida(@primeraHora time, @primeraSalida varchar(10), @segundaHora time, @segundaSalida varchar(10), @terceraHora time, @terceraSalida varchar(10), @cuartaHora time,
-	@cuartaSalida varchar(10), @quintaHora time, @quintaSalida varchar(10), @sextaHora time, @sextaSalida varchar(10), @septimaHora time, @septimaSalida varchar(10), @octavaHora time, @octavaSalida varchar(10), @novenaHora time, @novenaSalida varchar(10), @decimaHora time, @decimaSalida varchar(10), @onceHora time, @onceSalida varchar(10), @doceHora time, @doceSalida varchar(10), @treceHora time,
-	@treceSalida varchar(10), @catorceHora time, @catorceSalida varchar(10))
+CREATE PROCEDURE insertarOrdenSalida(@primeraHora time, @primeraSalida int, @segundaHora time, @segundaSalida int, @terceraHora time, @terceraSalida int, @cuartaHora time,
+	@cuartaSalida int, @quintaHora time, @quintaSalida int, @sextaHora time, @sextaSalida int, @septimaHora time, @septimaSalida int, @octavaHora time, @octavaSalida int, @novenaHora time, @novenaSalida int, @decimaHora time, @decimaSalida int, @onceHora time, @onceSalida int, @doceHora time, @doceSalida int, @treceHora time,
+	@treceSalida int, @catorceHora time, @catorceSalida int)
 
 AS BEGIN
 		
 		INSERT INTO salidaDiaria VALUES(@primeraHora, @primeraSalida, @segundaHora, @segundaSalida, @terceraHora, @terceraSalida, @cuartaHora, @cuartaSalida, @quintaHora, @quintaSalida, @sextaHora, @sextaSalida, @septimaHora, @septimaSalida, @octavaHora, @octavaSalida, @novenaHora , @novenaSalida, @decimaHora, @decimaSalida, @onceHora, @onceSalida, @doceHora, @doceSalida, @treceHora, @treceSalida, @catorceHora, @catorceSalida)
 END
 
-execute insertarOrdenSalida '04:15','001', '04:45','002','05:50','001','07:00','002','07:45','001','08:30','002','09:30','001','10:30','001','11:30','002','12:30','001','13:30','002','14:20','001','15:30','001','16:30','002'
+execute insertarOrdenSalida '04:15',1, '04:45',2,'05:50',1,'07:00',2,'07:45',1,'08:30',2,'09:30',1,'10:30',1,'11:30',1,'12:30',1,'01:30',1,'02:20',1,'03:30',1,'04:30',1
 
-SELECT * FROM salidaDiaria
-SELECT * FROM autobuses
+
+
+/* CREAR UN NUEVO ORDEN DE BUSES PARA EL DIA*/
+CREATE PROCEDURE insertarOrdenSalida(@primeraSalida int, @segundaSalida int, @terceraSalida int,
+	@cuartaSalida int, @quintaSalida int, @sextaSalida int, @septimaSalida int, @octavaSalida int, @novenaSalida int, @decimaSalida int, @onceSalida int, @doceSalida int,
+	@treceSalida int, @catorceSalida int)
+
+AS BEGIN
+		
+		INSERT INTO salidaDiaria VALUES(@primeraSalida, @segundaSalida, @terceraSalida, @cuartaSalida, @quintaSalida, @sextaSalida, @septimaSalida, @octavaSalida, @novenaSalida, @decimaSalida, @onceSalida, @doceSalida, @treceSalida, @catorceSalida)
+END
 
 /*MODIFICAR EL ORDEN DE SALIDAS DE UN DIA*/
-ALTER PROCEDURE modificarOrdenSalida(@id int, @primeraSalida varchar(10), @segundaSalida varchar(10), @terceraSalida varchar(10),
-	@cuartaSalida varchar(10), @quintaSalida varchar(10), @sextaSalida varchar(10), @septimaSalida varchar(10), @octavaSalida varchar(10), @novenaSalida varchar(10), @decimaSalida varchar(10), @onceSalida varchar(10), @doceSalida varchar(10),
-	@treceSalida varchar(10), @catorceSalida varchar(10))
+CREATE PROCEDURE modificarOrdenSalida(@id int, @primeraSalida int, @segundaSalida int, @terceraSalida int,
+	@cuartaSalida int, @quintaSalida int, @sextaSalida int, @septimaSalida int, @octavaSalida int, @novenaSalida int, @decimaSalida int, @onceSalida int, @doceSalida int,
+	@treceSalida int, @catorceSalida int)
 
 AS BEGIN
 		
 		UPDATE salidaDiaria SET primeraSalida  = @primeraSalida, segundaSalida = @segundaSalida, terceraSalida = @terceraSalida, cuartaSalida = @cuartaSalida, quintaSalida = @quintaSalida, sextaSalida = @sextaSalida, septimaSalida = @septimaSalida, octavaSalida = @octavaSalida, novenaSalida = @novenaSalida, decimaSalida = @decimaSalida, onceSalida= @onceSalida, doceSalida = @doceSalida, treceSalida = @treceSalida, catorceSalida = @catorceSalida WHERE salidaDiaria.id = @id
 END
-
-execute modificarOrdenSalida 1, '001','002','001','002','001','002','001','001','002','001','002','001','001','002'
-
-
 
 /*ELIMINAR UNA ORDEN DE SALIDAS DE UN DIA*/
 CREATE PROCEDURE eliminarOrdenSalida(@id int)
@@ -348,7 +347,6 @@ AS BEGIN
 		DELETE FROM salidaDiaria WHERE salidaDiaria.id = @id
 END
 
-EXECUTE eliminarOrdenSalida 3
 
 SELECT matricula FROM salidaDiaria INNER JOIN autobuses ON salidaDiaria.primeraSalida = autobuses.id
 
@@ -373,7 +371,6 @@ END
 execute insertarTarifa 70, 'ACTIVA'
 execute insertarTarifa 35, 'ACTIVA'
 
-select * from autobuses
 -- Modificar una tarifa existente
 CREATE PROCEDURE modificarTarifa(@costo int, @estado varchar(25))
 AS BEGIN
@@ -438,11 +435,8 @@ AS BEGIN
 			raiserror('NO EXISTE NINGUN DESTINO CON EL CODIGO PROPORCIONADO!', 16,1)
 END
 
-
-
-
 -- PARA LA BOLETERIA
-ALTER PROCEDURE agregarBoleto(@tipoBoleto int, @fecha date, @codigoBoleto varchar(25), @identidadCliente varchar(13), @matriculaAutobus varchar(25), @numeroAsiento int, @terminalSalida varchar(25), @destino int, @otroPrecio int, @otroDestino varchar(25), @Nsalida int)
+CREATE PROCEDURE agregarBoleto(@fecha date, @codigoBoleto varchar(25), @identidadCliente varchar(13), @matriculaAutobus varchar(25), @numeroAsiento int, @terminalSalida varchar(25), @destino int)
 AS BEGIN
 	
 		IF exists(select codigoBoleto from boleteria WHERE
@@ -451,38 +445,25 @@ AS BEGIN
 		raiserror('YA EXISTE UN BOLETO CON EL MISMO CODIGO ó EL ASIENTO YA ESTA OCUPADO!', 16,1)
 		
 		else
-
-		if @tipoBoleto = 2
-			insert into boleteria VALUES(@tipoBoleto, @fecha, @codigoBoleto, @identidadCliente, @matriculaAutobus, @numeroAsiento, @terminalSalida, null, @otroPrecio, @otroDestino,  @Nsalida)
-		
-		else if @tipoBoleto = 1
-			insert into boleteria VALUES(@tipoBoleto, @fecha, @codigoBoleto, @identidadCliente, @matriculaAutobus, @numeroAsiento, @terminalSalida, @destino, null, null,  @Nsalida)
+		insert into boleteria VALUES(@fecha, @codigoBoleto, @identidadCliente, @matriculaAutobus, @numeroAsiento, @terminalSalida, @destino)
 
 END
 
-insert into boleteria values('2020/07/22', '000015', '1001200200094', '001', 24, 'LA ESPERANZA', NULL, 25, 'LA SORTO', 1)
-insert into boleteria values('2020/07/22', '000016', '1001200200094', '002', 38, 'LA ESPERANZA', 1, null, null, 1)
+execute agregarBoleto 'N100', '1001200200094', '00001', 1, 'LA ESPERANZA', 1
 
 
-
-ALTER PROCEDURE modificarBoleto(@tipoBoletoNuevo int, @codigoBoleto varchar(25), @numeroAsiento int, @destino int, @otroPrecio int, @otroDestino varchar(25))
+CREATE PROCEDURE modificarBoleto(@fecha date, @codigoBoleto varchar(25), @identidadCliente varchar(13), @matriculaAutobus varchar(25), @numeroAsiento int, @terminalSalida varchar(25), @destino int)
 AS BEGIN
 	
-		IF @tipoBoletoNuevo = 2
+		IF exists(select codigoBoleto from boleteria WHERE
+		(codigoBoleto = @codigoBoleto)) 
 
-				UPDATE boleteria SET tipoBoleto = 2, numeroAsiento = @numeroAsiento, destino = null, otroPrecio = @otroPrecio, otroDestino = @otroDestino WHERE codigoBoleto = @codigoBoleto  
+				UPDATE boleteria SET fecha = @fecha, codigoBoleto = @codigoBoleto, identidadCliente = @identidadCliente, matriculaAutobus = @matriculaAutobus, numeroAsiento = @numeroAsiento, terminalSalida = @terminalSalida, destino = @destino
 
-		else if @tipoBoletoNuevo = 1
-
-				UPDATE boleteria SET tipoBoleto = 1, numeroAsiento = @numeroAsiento, destino = @destino, otroPrecio = null, otroDestino = null   WHERE codigoBoleto = @codigoBoleto  
-
+		else
+		
+		raiserror('NO HAY NINGUN BOLETO REGISTRADO CON ESTE CODIGO', 16,1)
 END
-
-EXECUTE modificarBoleto 2, '000010', 14, 0, 25, 'LA SORTO'
-
-SELECT * FROM boleteria
-
-
 
 CREATE PROCEDURE eliminarBoleto(@codigoBoleto varchar(25))
 AS BEGIN
@@ -522,9 +503,3 @@ SELECT primeraHora  FROM salidaDiaria WHERE id = 1
 SELECT segundoHora  FROM salidaDiaria WHERE id = 1
 
 select * from boleteria
-
-SELECT * FROM boleteria WHERE fecha = '2020-07-22' and noSalida =2
-
-SELECT nombreDestino FROM boleteria INNER JOIN destinos ON boleteria.destino = destinos.id
-
-SELECT costo FROM boleteria INNER JOIN destinos ON boleteria.destino = destinos.id INNER JOIN tarifas ON destinos.precioViaje = tarifas.id

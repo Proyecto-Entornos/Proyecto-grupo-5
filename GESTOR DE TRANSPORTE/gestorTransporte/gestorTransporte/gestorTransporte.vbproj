@@ -78,11 +78,23 @@
     <Compile Include="Autobuses.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="eliminarBoleto.Designer.vb">
       <DependentUpon>eliminarBoleto.vb</DependentUpon>
     </Compile>
     <Compile Include="eliminarBoleto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.Designer.vb">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="estadosAutobuses.Designer.vb">
@@ -102,6 +114,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,8 +137,14 @@
     <EmbeddedResource Include="Autobuses.resx">
       <DependentUpon>Autobuses.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eliminarBoleto.resx">
       <DependentUpon>eliminarBoleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="estadosAutobuses.resx">
       <DependentUpon>estadosAutobuses.vb</DependentUpon>

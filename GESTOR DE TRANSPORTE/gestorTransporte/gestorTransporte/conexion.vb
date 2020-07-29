@@ -5,11 +5,24 @@ Imports System.Windows.Forms
 
 Public Class conexion
 
-    Public conexion As SqlConnection = New SqlConnection("Data Source =DESKTOP-P4A3L4O;Initial Catalog=terminalAutobuses;Integrated Security=True")
-    Private cmb As SqlCommandBuilder
-    Public ds As DataSet = New DataSet()
-    Public da As SqlDataAdapter
+    Public conexion As New SqlConnection("Data Source=MEJIA09\TEW_SQLEXPRESS;Initial Catalog=terminalAutobuses;Integrated Security=True")
+    Private cmb As New SqlCommandBuilder
+    Public ds As New DataSet
+    Public da As New SqlDataAdapter
     Public comando As SqlCommand
+    Public comand As New SqlCommand
+    Public dv As New DataView
+
+    Public Sub conectar()
+        Try
+            conexion.Open()
+            MessageBox.Show("Conexión realizada exitosamente")
+        Catch ex As Exception
+            MessageBox.Show("Error conexion de base de datos")
+        Finally
+            conexion.Close()
+        End Try
+    End Sub
 
     Function ventaRegistradaBoleto(ByVal tipoBoleto As Integer, ByVal fecha As Date, ByVal codigoBoleto As String, ByVal identidadCliente As String, ByVal matriculaAutobus As String, ByVal numeroAsiento As Integer, ByVal terminalSalida As String, ByVal destino As Integer, ByVal otroPrecio As Integer, ByVal otroDestino As String, ByVal Nsalida As Integer)
 
@@ -619,4 +632,201 @@ Public Class conexion
 
 
 
+    '---------------------------- Funciones para Empleados ----------------------------
+
+    Public Function LlenarTabla(ByVal sql, ByVal tabla)
+        ds.Tables.Clear()
+        da = New SqlDataAdapter(sql, conexion)
+        cmb = New SqlCommandBuilder(da)
+        da.Fill(ds, tabla)
+        dv.Table = ds.Tables(0)
+    End Function
+
+    Public Function agregarEmpleado(codigo As String, identidadEmpleado As String, primerNombre As String, segundoNombre As String, primerApellido As String, segundoApellido As String, edad As Integer, añosDeServicio As Integer, estado As String, cargo As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("agregarEmpleados", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@codigo", codigo)
+            comand.Parameters.AddWithValue("@identidadEmpleado", identidadEmpleado)
+            comand.Parameters.AddWithValue("@primerNombre", primerNombre)
+            comand.Parameters.AddWithValue("@segundoNombre", segundoNombre)
+            comand.Parameters.AddWithValue("@primerApellido", primerApellido)
+            comand.Parameters.AddWithValue("@segundoApellido", segundoApellido)
+            comand.Parameters.AddWithValue("@edad", edad)
+            comand.Parameters.AddWithValue("@añosDEServicio", añosDeServicio)
+            comand.Parameters.AddWithValue("@estado", estado)
+            comand.Parameters.AddWithValue("@cargo", cargo)
+
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+
+    Public Function actualizarEmpleados(codigo As String, identidadEmpleado As String, primerNombre As String, segundoNombre As String, primerApellido As String, segundoApellido As String, edad As Integer, añosDeServicio As Integer, estado As String, cargo As String)
+
+        Try
+            conexion.Open()
+            comand = New SqlCommand("actualizarEmpleados", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@codigo", codigo)
+            comand.Parameters.AddWithValue("@identidadEmpleado", identidadEmpleado)
+            comand.Parameters.AddWithValue("@primerNombre", primerNombre)
+            comand.Parameters.AddWithValue("@segundoNombre", segundoNombre)
+            comand.Parameters.AddWithValue("@primerApellido", primerApellido)
+            comand.Parameters.AddWithValue("@segundoApellido", segundoApellido)
+            comand.Parameters.AddWithValue("@edad", edad)
+            comand.Parameters.AddWithValue("@añosDEServicio", añosDeServicio)
+            comand.Parameters.AddWithValue("@estado", estado)
+            comand.Parameters.AddWithValue("@cargo", cargo)
+
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function eliminarEmpleado(ByVal table, ByVal condicion)
+        conexion.Open()
+        Dim eliminarE As String = "delete from " + table + " where " + condicion
+        comand = New SqlCommand(eliminarE, conexion)
+        Dim i As Integer = comand.ExecuteNonQuery()
+        conexion.Close()
+        If (i > 0) Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+
+    Public Function buscarEmpleado(ByVal condicion) As DataTable
+
+        Try
+            conexion.Open()
+            Dim search As String = "select * from empleados " + " where " + condicion
+
+            Dim comand As New SqlCommand(search, conexion)
+            If comand.ExecuteNonQuery Then
+                Dim dataT As New DataTable
+                Dim dataA As New SqlDataAdapter(comand)
+                dataA.Fill(dataT)
+                Return dataT
+            Else
+                Return Nothing
+            End If
+            conexion.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
+
+
+    '-----------------------------------Funciones Para Clientes-----------------------------------
+
+    Public Function LlenarTablaClientes(ByVal sql, ByVal tabla)
+        ds.Tables.Clear()
+        da = New SqlDataAdapter(sql, conexion)
+        cmb = New SqlCommandBuilder(da)
+        da.Fill(ds, tabla)
+        dv.Table = ds.Tables(0)
+    End Function
+
+    Public Function agregarCliente(identidadCliente As String, primerNombre As String, segundoNombre As String, primerApellido As String, segundoApellido As String, edad As String, depto As String, estado As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("agregarCliente", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@identidadCliente", identidadCliente)
+            comand.Parameters.AddWithValue("@primerNombre", primerNombre)
+            comand.Parameters.AddWithValue("@segundoNombre", segundoNombre)
+            comand.Parameters.AddWithValue("@primerApellido", primerApellido)
+            comand.Parameters.AddWithValue("@segundoApellido", segundoApellido)
+            comand.Parameters.AddWithValue("@edadCliente", edad)
+            comand.Parameters.AddWithValue("@departamento", depto)
+            comand.Parameters.AddWithValue("@estado", estado)
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function actualizarCliente(identidadCliente As String, primerNombre As String, segundoNombre As String, primerApellido As String, segundoApellido As String, edad As String, depto As String, estado As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("actualizarCliente", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@identidadCliente", identidadCliente)
+            comand.Parameters.AddWithValue("@primerNombre", primerNombre)
+            comand.Parameters.AddWithValue("@segundoNombre", segundoNombre)
+            comand.Parameters.AddWithValue("@primerApellido", primerApellido)
+            comand.Parameters.AddWithValue("@segundoApellido", segundoApellido)
+            comand.Parameters.AddWithValue("@edadCliente", edad)
+            comand.Parameters.AddWithValue("@departamento", depto)
+            comand.Parameters.AddWithValue("@estado", estado)
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function eliminarCliente(ByVal table, ByVal condicion)
+        conexion.Open()
+        Dim eliminarC As String = "delete from " + table + " where " + condicion
+        comand = New SqlCommand(eliminarC, conexion)
+
+        If comand.ExecuteNonQuery() Then
+            Return True
+            conexion.Close()
+        Else
+            Return False
+            conexion.Close()
+        End If
+    End Function
+
+    Public Function buscarCliente(ByVal condicion) As DataTable
+        Try
+            conexion.Open()
+            Dim buscarC As String = "select * from clientes " + " where " + condicion
+
+            Dim comand As New SqlCommand(buscarC, conexion)
+            If comand.ExecuteNonQuery Then
+                Dim dataT As New DataTable
+                Dim dataA As New SqlDataAdapter(comand)
+                dataA.Fill(dataT)
+                Return dataT
+            Else
+                Return Nothing
+            End If
+            conexion.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
+
 End Class
+
+
+
+
