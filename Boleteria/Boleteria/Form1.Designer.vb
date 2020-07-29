@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,21 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtAyudante = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtConductor = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtUbicacion = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.txtFabricacion = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
         Me.txtKM = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.txtAño = New System.Windows.Forms.TextBox()
@@ -56,14 +67,44 @@ Partial Class Form1
         Me.DataBus = New System.Windows.Forms.DataGridView()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider2 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider3 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider4 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider5 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider6 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider7 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider8 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider9 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider10 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataBus, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.GroupBox1.Controls.Add(Me.txtAyudante)
+        Me.GroupBox1.Controls.Add(Me.Label22)
+        Me.GroupBox1.Controls.Add(Me.txtConductor)
+        Me.GroupBox1.Controls.Add(Me.Label23)
+        Me.GroupBox1.Controls.Add(Me.txtUbicacion)
+        Me.GroupBox1.Controls.Add(Me.Label20)
+        Me.GroupBox1.Controls.Add(Me.Label21)
+        Me.GroupBox1.Controls.Add(Me.txtFabricacion)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.Label19)
         Me.GroupBox1.Controls.Add(Me.txtKM)
         Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.txtAño)
@@ -93,12 +134,102 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(109, 47)
+        Me.GroupBox1.Location = New System.Drawing.Point(37, 47)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(689, 232)
+        Me.GroupBox1.Size = New System.Drawing.Size(772, 257)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del Autobus"
+        '
+        'txtAyudante
+        '
+        Me.txtAyudante.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.txtAyudante.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtAyudante.Location = New System.Drawing.Point(544, 224)
+        Me.txtAyudante.Name = "txtAyudante"
+        Me.txtAyudante.Size = New System.Drawing.Size(190, 13)
+        Me.txtAyudante.TabIndex = 46
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(541, 225)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(193, 13)
+        Me.Label22.TabIndex = 47
+        Me.Label22.Text = "_______________________________"
+        '
+        'txtConductor
+        '
+        Me.txtConductor.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.txtConductor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtConductor.Location = New System.Drawing.Point(341, 223)
+        Me.txtConductor.Name = "txtConductor"
+        Me.txtConductor.Size = New System.Drawing.Size(204, 13)
+        Me.txtConductor.TabIndex = 44
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(338, 224)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(199, 13)
+        Me.Label23.TabIndex = 45
+        Me.Label23.Text = "________________________________"
+        '
+        'txtUbicacion
+        '
+        Me.txtUbicacion.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.txtUbicacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtUbicacion.Location = New System.Drawing.Point(159, 204)
+        Me.txtUbicacion.Name = "txtUbicacion"
+        Me.txtUbicacion.Size = New System.Drawing.Size(129, 13)
+        Me.txtUbicacion.TabIndex = 42
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(156, 205)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(133, 13)
+        Me.Label20.TabIndex = 43
+        Me.Label20.Text = "_____________________"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(172, 172)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(88, 13)
+        Me.Label21.TabIndex = 41
+        Me.Label21.Text = "Ubicación Actual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'txtFabricacion
+        '
+        Me.txtFabricacion.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.txtFabricacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtFabricacion.Location = New System.Drawing.Point(18, 204)
+        Me.txtFabricacion.Name = "txtFabricacion"
+        Me.txtFabricacion.Size = New System.Drawing.Size(129, 13)
+        Me.txtFabricacion.TabIndex = 39
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(15, 205)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(133, 13)
+        Me.Label18.TabIndex = 40
+        Me.Label18.Text = "_____________________"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(31, 172)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(99, 13)
+        Me.Label19.TabIndex = 38
+        Me.Label19.Text = "Año de Fabricación" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'txtKM
         '
@@ -213,7 +344,7 @@ Partial Class Form1
         Me.cmbColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbColor.FormattingEnabled = True
         Me.cmbColor.Items.AddRange(New Object() {"", "Amarillo", "Negro", "Rojo"})
-        Me.cmbColor.Location = New System.Drawing.Point(451, 134)
+        Me.cmbColor.Location = New System.Drawing.Point(448, 129)
         Me.cmbColor.Name = "cmbColor"
         Me.cmbColor.Size = New System.Drawing.Size(129, 21)
         Me.cmbColor.TabIndex = 26
@@ -223,7 +354,7 @@ Partial Class Form1
         Me.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbEstado.FormattingEnabled = True
         Me.cmbEstado.Items.AddRange(New Object() {"", "Servicio", "Sin Servicio"})
-        Me.cmbEstado.Location = New System.Drawing.Point(450, 52)
+        Me.cmbEstado.Location = New System.Drawing.Point(447, 47)
         Me.cmbEstado.Name = "cmbEstado"
         Me.cmbEstado.Size = New System.Drawing.Size(130, 21)
         Me.cmbEstado.TabIndex = 25
@@ -232,8 +363,7 @@ Partial Class Form1
         '
         Me.cmbAyudante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbAyudante.FormattingEnabled = True
-        Me.cmbAyudante.Items.AddRange(New Object() {"", "sdsd", "ssff", "sfs"})
-        Me.cmbAyudante.Location = New System.Drawing.Point(271, 196)
+        Me.cmbAyudante.Location = New System.Drawing.Point(544, 196)
         Me.cmbAyudante.Name = "cmbAyudante"
         Me.cmbAyudante.Size = New System.Drawing.Size(190, 21)
         Me.cmbAyudante.TabIndex = 24
@@ -242,15 +372,14 @@ Partial Class Form1
         '
         Me.cmbConductor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbConductor.FormattingEnabled = True
-        Me.cmbConductor.Items.AddRange(New Object() {"", "jvfdfvjfbf", "ffgbfg", "gfg"})
-        Me.cmbConductor.Location = New System.Drawing.Point(36, 196)
+        Me.cmbConductor.Location = New System.Drawing.Point(334, 196)
         Me.cmbConductor.Name = "cmbConductor"
         Me.cmbConductor.Size = New System.Drawing.Size(204, 21)
         Me.cmbConductor.TabIndex = 23
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(599, 118)
+        Me.btnEliminar.Location = New System.Drawing.Point(680, 132)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
         Me.btnEliminar.TabIndex = 22
@@ -259,7 +388,7 @@ Partial Class Form1
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(599, 75)
+        Me.btnModificar.Location = New System.Drawing.Point(680, 89)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(75, 23)
         Me.btnModificar.TabIndex = 21
@@ -268,7 +397,7 @@ Partial Class Form1
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(599, 29)
+        Me.btnAgregar.Location = New System.Drawing.Point(680, 43)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(75, 23)
         Me.btnAgregar.TabIndex = 20
@@ -278,7 +407,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(279, 180)
+        Me.Label10.Location = New System.Drawing.Point(552, 180)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(52, 13)
         Me.Label10.TabIndex = 18
@@ -287,7 +416,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(45, 180)
+        Me.Label9.Location = New System.Drawing.Point(343, 180)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(56, 13)
         Me.Label9.TabIndex = 16
@@ -296,7 +425,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(456, 36)
+        Me.Label8.Location = New System.Drawing.Point(453, 31)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(40, 13)
         Me.Label8.TabIndex = 14
@@ -305,7 +434,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(462, 118)
+        Me.Label7.Location = New System.Drawing.Point(459, 113)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(31, 13)
         Me.Label7.TabIndex = 12
@@ -370,10 +499,10 @@ Partial Class Form1
         Me.DataBus.AllowUserToAddRows = False
         Me.DataBus.AllowUserToDeleteRows = False
         Me.DataBus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataBus.Location = New System.Drawing.Point(62, 288)
+        Me.DataBus.Location = New System.Drawing.Point(37, 318)
         Me.DataBus.Name = "DataBus"
         Me.DataBus.ReadOnly = True
-        Me.DataBus.Size = New System.Drawing.Size(776, 150)
+        Me.DataBus.Size = New System.Drawing.Size(853, 150)
         Me.DataBus.TabIndex = 1
         '
         'PictureBox1
@@ -396,12 +525,52 @@ Partial Class Form1
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "TRANSPORTES CAROLINA"
         '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
+        'ErrorProvider2
+        '
+        Me.ErrorProvider2.ContainerControl = Me
+        '
+        'ErrorProvider3
+        '
+        Me.ErrorProvider3.ContainerControl = Me
+        '
+        'ErrorProvider4
+        '
+        Me.ErrorProvider4.ContainerControl = Me
+        '
+        'ErrorProvider5
+        '
+        Me.ErrorProvider5.ContainerControl = Me
+        '
+        'ErrorProvider6
+        '
+        Me.ErrorProvider6.ContainerControl = Me
+        '
+        'ErrorProvider7
+        '
+        Me.ErrorProvider7.ContainerControl = Me
+        '
+        'ErrorProvider8
+        '
+        Me.ErrorProvider8.ContainerControl = Me
+        '
+        'ErrorProvider9
+        '
+        Me.ErrorProvider9.ContainerControl = Me
+        '
+        'ErrorProvider10
+        '
+        Me.ErrorProvider10.ContainerControl = Me
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.ClientSize = New System.Drawing.Size(948, 450)
+        Me.ClientSize = New System.Drawing.Size(948, 480)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.DataBus)
@@ -412,6 +581,16 @@ Partial Class Form1
         Me.GroupBox1.PerformLayout()
         CType(Me.DataBus, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -450,4 +629,24 @@ Partial Class Form1
     Friend WithEvents Label16 As Label
     Friend WithEvents txtAsiento As TextBox
     Friend WithEvents Label15 As Label
+    Friend WithEvents txtUbicacion As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents txtFabricacion As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents txtAyudante As TextBox
+    Friend WithEvents Label22 As Label
+    Friend WithEvents txtConductor As TextBox
+    Friend WithEvents Label23 As Label
+    Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents ErrorProvider2 As ErrorProvider
+    Friend WithEvents ErrorProvider3 As ErrorProvider
+    Friend WithEvents ErrorProvider4 As ErrorProvider
+    Friend WithEvents ErrorProvider5 As ErrorProvider
+    Friend WithEvents ErrorProvider6 As ErrorProvider
+    Friend WithEvents ErrorProvider7 As ErrorProvider
+    Friend WithEvents ErrorProvider8 As ErrorProvider
+    Friend WithEvents ErrorProvider9 As ErrorProvider
+    Friend WithEvents ErrorProvider10 As ErrorProvider
 End Class

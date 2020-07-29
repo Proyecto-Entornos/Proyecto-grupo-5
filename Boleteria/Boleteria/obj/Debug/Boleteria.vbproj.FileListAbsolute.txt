@@ -9,16 +9,14 @@ C:\Users\MI PC\source\repos\Boleteria\Boleteria\obj\Debug\Boleteria.vbproj.Gener
 C:\Users\MI PC\source\repos\Boleteria\Boleteria\obj\Debug\Boleteria.exe
 C:\Users\MI PC\source\repos\Boleteria\Boleteria\obj\Debug\Boleteria.xml
 C:\Users\MI PC\source\repos\Boleteria\Boleteria\obj\Debug\Boleteria.pdb
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.exe.config
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.exe
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.pdb
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.xml
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.vbprojAssemblyReference.cache
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.Empleados.resources
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.Form1.resources
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.Resources.resources
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.vbproj.GenerateResource.cache
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.vbproj.CoreCompileInputs.cache
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.exe
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.xml
-C:\Users\edavi\Source\Repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.pdb
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.exe.config
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.exe
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.pdb
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\bin\Debug\Boleteria.xml
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.vbprojAssemblyReference.cache
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.Form1.resources
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.Resources.resources
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.vbproj.GenerateResource.cache
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.exe
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.xml
+C:\Users\MI PC\source\repos\Proyecto-Entornos\Proyecto-grupo-5\Boleteria\Boleteria\obj\Debug\Boleteria.pdb
