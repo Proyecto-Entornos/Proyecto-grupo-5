@@ -127,4 +127,13 @@
         End If
     End Sub
 
+    Private Sub LimpiarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LimpiarToolStripMenuItem.Click
+        txtCostoTarifa.Clear()
+        cmbEstadoTarifa.ResetText()
+        txtCodigoDestino.Clear()
+        txtNombreDestino.Clear()
+        txtPrecio.Clear()
+        cmbEstado.ResetText()
+    End Sub
+
 End Class
