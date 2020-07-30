@@ -1,0 +1,11 @@
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login proyecto.vbprojAssemblyReference.cache
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login_proyecto.Form1.resources
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login_proyecto.Resources.resources
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login proyecto.vbproj.GenerateResource.cache
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\bin\Debug\login proyecto.exe.config
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\bin\Debug\login proyecto.exe
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\bin\Debug\login proyecto.pdb
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\bin\Debug\login proyecto.xml
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login proyecto.exe
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login proyecto.xml
+C:\Users\MI PC\source\repos\login proyecto\login proyecto\obj\Debug\login proyecto.pdb
