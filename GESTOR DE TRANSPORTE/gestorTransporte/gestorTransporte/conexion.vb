@@ -7,6 +7,7 @@ Public Class conexion
 
     Public conexion As New SqlConnection("Data Source=MEJIA09\TEW_SQLEXPRESS;Initial Catalog=terminalAutobuses;Integrated Security=True")
     Private cmb As New SqlCommandBuilder
+    Public cmd As New SqlCommand
     Public ds As New DataSet
     Public da As New SqlDataAdapter
     Public comando As SqlCommand
@@ -823,6 +824,132 @@ Public Class conexion
             MsgBox(ex.Message)
             Return Nothing
         End Try
+    End Function
+
+
+
+    '----------------------------Funciones para Tarifas------------------------------
+
+    Public Function LlenarTablaTarifas(ByVal sql, ByVal tabla)
+        ds.Tables.Clear()
+        da = New SqlDataAdapter(sql, conexion)
+        cmb = New SqlCommandBuilder(da)
+        da.Fill(ds, tabla)
+        dv.Table = ds.Tables(0)
+    End Function
+
+    Public Function agregarTarifa(costo As Integer, estado As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("insertarTarifa", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@costo", costo)
+            comand.Parameters.AddWithValue("@estado", estado)
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function modificarTarifa(costo As Integer, estado As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("modificarTarifa", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@costo", costo)
+            comand.Parameters.AddWithValue("@estado", estado)
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function eliminarTarifa(costo As Integer)
+        conexion.Open()
+        cmd = New SqlCommand("eliminarTarifa", conexion)
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.AddWithValue("@costo", costo)
+
+        If cmd.ExecuteNonQuery <> 0 Then
+            Return True
+            conexion.Close()
+        Else
+            Return False
+        End If
+        conexion.Close()
+    End Function
+
+
+    '-----------------------------Funciones para Destinos-----------------------------
+
+    Public Function LlenarTablaDestios(ByVal sql, ByVal tabla)
+        ds.Tables.Clear()
+        da = New SqlDataAdapter(sql, conexion)
+        cmb = New SqlCommandBuilder(da)
+        da.Fill(ds, tabla)
+        dv.Table = ds.Tables(0)
+    End Function
+
+    Public Function agregarDestino(codigoDestino As String, nombreDestino As String, precioViaje As Integer, estado As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("agregarDestino", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@codigoDestino", codigoDestino)
+            comand.Parameters.AddWithValue("@nombreDestino", nombreDestino)
+            comand.Parameters.AddWithValue("@precioViaje", precioViaje)
+            comand.Parameters.AddWithValue("@estado", estado)
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function modificarDestino(codigoDestino As String, nombreDestino As String, precioViaje As Integer, estado As String)
+        Try
+            conexion.Open()
+            comand = New SqlCommand("modificarDestino", conexion)
+            comand.CommandType = CommandType.StoredProcedure
+            comand.Parameters.AddWithValue("@codigoDestino", codigoDestino)
+            comand.Parameters.AddWithValue("@nombreDestino", nombreDestino)
+            comand.Parameters.AddWithValue("@precioViaje", precioViaje)
+            comand.Parameters.AddWithValue("@estado", estado)
+            If comand.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Function
+
+    Public Function eliminarDestino(codigoDestino As String)
+
+        conexion.Open()
+        cmd = New SqlCommand("borrarDestino", conexion)
+        cmd.CommandType = CommandType.StoredProcedure
+        cmd.Parameters.AddWithValue("@codigoDestino", codigoDestino)
+        If cmd.ExecuteNonQuery <> 0 Then
+            Return True
+            conexion.Close()
+        Else
+            Return False
+        End If
+        conexion.Close()
+
     End Function
 
 End Class

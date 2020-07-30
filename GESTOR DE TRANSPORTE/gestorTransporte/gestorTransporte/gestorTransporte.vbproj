@@ -47,10 +47,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -85,6 +89,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="conexion.vb" />
+    <Compile Include="Destinos y Tarifas.Designer.vb">
+      <DependentUpon>Destinos y Tarifas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Destinos y Tarifas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="eliminarBoleto.Designer.vb">
       <DependentUpon>eliminarBoleto.vb</DependentUpon>
     </Compile>
@@ -140,6 +150,9 @@
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Destinos y Tarifas.resx">
+      <DependentUpon>Destinos y Tarifas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="eliminarBoleto.resx">
       <DependentUpon>eliminarBoleto.vb</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +189,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mapa Asentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="terminalAutobuses.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
